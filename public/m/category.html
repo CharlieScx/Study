@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/category.css">
+    <script src="assets/mui/js/mui.min.js"></script>
+    <title>Document</title>
+</head>
+<!-- 基础mui的DOM结构 -->
+
+<body>
+    <!-- 顶部导航栏-->
+    <header class="mui-bar mui-bar-nav header">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">乐淘云购</h1>
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-right"></a>
+    </header>
+
+    <!-- 底部选项卡 -->
+    <nav class="mui-bar mui-bar-tab footer">
+        <a class="mui-tab-item mui-active" href="index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="category.html">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="cart.html">
+            <span class="mui-icon iconfont icon-gouwuche"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="user.html">
+            <span class="mui-icon mui-icon-person"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+
+    <!-- 主体部分  -->
+    <div class="content mui-clearfix">
+        <!-- 左边一级分类 -->
+        <div class="content-left">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll first">
+                    <a class="active">运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                    <a>运动馆</p>
+                    <a>运动馆</a>
+                    <a>运动馆</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右边二级分类 -->
+        <div class="content-right">
+            <a href="#">
+                <img src="images/banner111.jpg" alt="" class="brand">
+            </a>
+            <div class="mui-scroll-wrapper right-bottom">
+                <div class="mui-scroll">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/brand1.png" alt="">
+                                <p>耐克</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/brand2.png" alt="">
+                                <p>耐克</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/brand3.png" alt="">
+                                <p>耐克</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/brand4.png" alt="">
+                                <p>耐克</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/brand5.png" alt="">
+                                <p>耐克</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/brand6.png" alt="">
+                                <p>耐克</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 初始化scroll控件
+        mui('.mui-scroll-wrapper').scroll({
+            deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+        });
+    </script>
+</body>
+
+</html>
